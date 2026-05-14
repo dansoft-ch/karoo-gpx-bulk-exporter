@@ -1,2 +1,15 @@
-# karoo-gpx-bulk-exporter
-A PowerShell-based bulk exporter for routes from the Hammerhead dashboard.
+# Karoo GPX bulk exporter
+
+This PowerShell script uses your temporary access token to call the unofficial Hammerhead API to download all routes at once as GPX so you don't have to manually download each one.
+
+## Usage
+1. Download the script from the source code.
+2. Optain your API token (valid for 1h). Go to dashboard.hammerhead.io -> Login -> Open Chrome Developer Menu (F12) -> Network -> Filter for Fetch/XHR -> Look for a request like `profile` or `feature` and click it. Select `headers` and look for `Authorization`. Now you see `Bearer YOUR_TOKEN`. Copy your token without the bearer part.
+
+<img width="1880" height="653" alt="image" src="https://github.com/user-attachments/assets/ae01e966-296a-43d2-9e77-79d7735bbdf6" />
+
+3. Run the script:
+```
+$env:KAROO_TOKEN = "YOUR_TOKEN"
+./gpx-exporter.ps1
+```
