@@ -19,3 +19,8 @@ $env:KAROO_TOKEN = "YOUR_TOKEN"
 $env:KAROO_USER_ID = "12345" 
 ./gpx-exporter.ps1
 ```
+
+If you get a policy error execute the following command first and try again:
+```
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+```
