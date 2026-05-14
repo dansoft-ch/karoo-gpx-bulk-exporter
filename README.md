@@ -24,3 +24,7 @@ If you get a policy error execute the following command first and try again:
 ```
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 ```
+
+### Result
+<img width="1108" height="498" alt="image" src="https://github.com/user-attachments/assets/790604bf-c61f-4acc-927a-d37ffa94641a" />
+
