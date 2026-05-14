@@ -12,7 +12,8 @@ This PowerShell script uses your temporary access token to call the unofficial H
 
 <img width="722" height="342" alt="image" src="https://github.com/user-attachments/assets/dc652e50-8d78-40ac-bc31-3b73a3a0719c" />
  
-3. Run the script in the terminal:
+3. Open the terminal at the location you saved the script.
+4. Run the script in the terminal:
 ```
 $env:KAROO_TOKEN = "YOUR_TOKEN"
 $env:KAROO_USER_ID = "12345" 
