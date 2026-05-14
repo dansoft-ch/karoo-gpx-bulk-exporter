@@ -8,8 +8,13 @@ This PowerShell script uses your temporary access token to call the unofficial H
 
 <img width="1880" height="653" alt="image" src="https://github.com/user-attachments/assets/ae01e966-296a-43d2-9e77-79d7735bbdf6" />
 
+3. Optain your UserId. Again in the Developer tools under Network look for a request to `profile`. Click it and go to the `Response` tab. There you see your id. Only copy the numbers.
+
+<img width="722" height="342" alt="image" src="https://github.com/user-attachments/assets/dc652e50-8d78-40ac-bc31-3b73a3a0719c" />
+ 
 3. Run the script:
 ```
 $env:KAROO_TOKEN = "YOUR_TOKEN"
+$env:KAROO_USER_ID = "12345" 
 ./gpx-exporter.ps1
 ```
